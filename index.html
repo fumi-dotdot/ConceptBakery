@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ブーランジェリ　プチボヌール</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ribeye&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- ADOBE FONT ta-houdate-m500 -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "imr5lev",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="#"><img src="/images/Bonheur_red.png" alt="logo" /></a>
+        <nav>
+          <ul class="sidebar">
+            <li onclick="hideSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#333"
+                >
+                  <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li><a href="#">トップ</a></li>
+            <li><a href="#story">ストーリー</a></li>
+            <li><a href="#bread">自慢のパン</a></li>
+            <li><a href="#access">営業案内とアクセス</a></li>
+          </ul>
+          <ul>
+            <li class="hideOnMobile"><a href="#">トップ</a></li>
+            <li class="hideOnMobile"><a href="#story">ストーリー</a></li>
+            <li class="hideOnMobile">
+              <a href="#bread">自慢のパン</a>
+            </li>
+            <li class="hideOnMobile">
+              <a href="#access">営業案内とアクセス</a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#333"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>ブーランジェリ　プチボヌール</h2>
+        <h1>Boulangerie Petit Bonheur</h1>
+        <dl>
+          <dt>温故知新</dt>
+          <dd>
+            伝統的な製法にこだわり３０時間じっくりと発酵させて焼き上げるフランスパン
+          </dd>
+        </dl>
+      </section>
+      <section id="story" class="main-content">
+        <h2>ストーリー</h2>
+        <div class="flexbox">
+          <div class="text item1">
+            <h3>通いたくなるベーカリー</h3>
+            <p>
+              つくば市の住宅街に小さなベーカリーがあります。その名は、「プチボヌール」。赤と緑を基調にした店構えで皆様をお迎えします。たった３坪ほどの売り場スペースに、ハード系パン、デニッシュ系パン、あんパンなど各種ご用意しています。
+            </p>
+            <p>
+              2015年の開業以来、足しげく通ってくださるお客様の笑顔のために滋味あるれるパンを提供しています。
+            </p>
+            <p>こだわりがいっぱい詰まったパンをぜひご賞味ください。</p>
+          </div>
+          <div class="foto item2">
+            <img src="images/baguette.jpg" alt="baguette" />
+          </div>
+          <div class="text item3">
+            <h3>オーナーのこだわり</h3>
+            <p>
+              オーナーの山口健です。日々、のパン作りのキーワード。「温故知新」をコンセプトにしたパン作りを提供しています。
+            </p>
+            <p>
+              インストアベーカリーとホテルベーカリーを経て、効率重視のパン作りといいものを追求するパン作りの両方を経験。自分は真摯にパン作りに向き合いたいと独立を決意しました。
+            </p>
+            <p>
+              先人が築いたパンの伝統的な製法にこだわり約３０時間じっくりと発酵させて焼き上げるフランスパンは、香り、食感、味とも極上です。
+            </p>
+          </div>
+          <div class="foto item4">
+            <img src="images/chef.jpeg" alt="chef" />
+          </div>
+        </div>
+      </section>
+      <section id="bread">
+        <h2>自慢のパン</h2>
+      </section>
+      <div class="container swiper">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img
+                src="images/slide1.jpg"
+                alt="baguette"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div class="product">
+              <p class="product-title">フランスパン</p>
+              <p class="product-details">
+                低温長時間発酵でゆっくりおいしさを引き出したフランスパンです！！
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide2.jpeg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">クリームドーナツ</p>
+              <p class="product-details">
+                ふわっとした生地のとろけるクリームのパン
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide3.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">アーモンドパウンドケーキ</p>
+              <p class="product-details">
+                しっとりどっしりおいしさが口いっぱいに
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide4.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">デニッシュ食パン</p>
+              <p class="product-details">バターを塗り重ねて焼き上げました</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide5.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">メロンパン</p>
+              <p class="product-details">懐かしの味メロンパン</p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide6.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">あんぱん</p>
+              <p class="product-details">
+                中種法で生地を作ることにより生み出されるあんとパンの一体感！！
+              </p>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-box">
+              <img src="images/slide7.jpg" alt="" width="300" height="300" />
+            </div>
+            <div class="product">
+              <p class="product-title">カレーパン</p>
+              <p class="product-details">一度食べたらやみつき</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-btn"></div>
+        <div class="swiper-button-next swiper-btn"></div>
+      </div>
+      <section id="access" class="main-content">
+        <h2>営業案内とアクセス</h2>
+        <div class="flexbox-ops">
+          <div class="ops item1">
+            <h3>営業日と焼き上がり時間</h3>
+            <ul>
+              <li>営業時間： 午前10時～午後7時</li>
+              <li>定休日： 日曜、月曜、祝日</li>
+            </ul>
+            <img src="images/time table.png" alt="" />
+          </div>
+          <div class="map item2">
+            <h3>アクセス</h3>
+            <dl>
+              <dt>所在地</dt>
+              <dd>茨城県つくば市みどりの1-2-3</dd>
+              <dt>アクセス</dt>
+              <dd>つくばエクスプレスみどりの駅から徒歩4分</dd>
+            </dl>
+            <div id="gMap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.5509919893025!2d140.0527830763117!3d36.031256572476366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60220ad9e35312a5%3A0x351533a05d890be9!2z44CSMzA1LTA4ODEg6Iyo5Z-O55yM44Gk44GP44Gw5biC44G_44Gp44KK44Gu77yR5LiB55uu77yS4oiS77yT!5e0!3m2!1sja!2sjp!4v1739010212188!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="page_top"><a href="#"></a></div>
+    </main>
+    <footer>
+      <a href="#"><img src="/images/Bonheur_white.png" alt="logo" /></a>
+      <div class="linkwrapper">
+        <ul>
+          <li>リンク</li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+              ストーリー
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+              自慢のパン
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+              トップ
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+              今月の営業
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-up-right-from-square"></i>
+              アクセス
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>ソーシャル</li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              INSTAGRAM
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>店舗情報</li>
+          <li>
+            Boulangerie Petit Bonheur
+            <br />
+            （ブーランジェリ　プチボヌール）
+          </li>
+          <li>〒305-0881 茨城県つくば市みどりの1-2-3</li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-envelope"></i>
+              info@bonheur.com
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-phone"></i>
+              0277-000-1234
+            </a>
+          </li>
+          <li>営業時間： 午前10時～午後7時</li>
+          <li>定休日： 日曜、月曜、祝日</li>
+        </ul>
+      </div>
+      <small>2025 &copy;Boulangerie Petit Bonheur</small>
+    </footer>
+    <!-- Include Swiper's JavaScript -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper at the end of the body -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".swiper", {
+          slidesPerView: 1,
+          breakpoints: {
+            468: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+          },
+          direction: "horizontal",
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      });
+    </script>
+    <!-- sidebar -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/222b9b89e7.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

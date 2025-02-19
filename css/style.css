@@ -1,0 +1,383 @@
+/* Basic styles */
+:root {
+  --color-primary: #bc4749;
+  --color-secondary: #386641;
+  --color-secondary-light: #6a994e;
+  --color-secondary-ash: #787d62;
+  --color-bg-light: #fff8e6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+body {
+  font-size: 100%;
+  font-family: Poppins, "Noto Sans Japanese", Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-light);
+  color: #444;
+  box-sizing: border-box;
+}
+/* Navbar */
+.navbar img,
+footer img {
+  width: 12.5vw;
+  min-width: 100px;
+  object-fit: contain;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 3vw;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav li {
+  padding: 0.5vw 1vw;
+  border-left: 1px solid #333;
+}
+nav a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+nav a:hover,
+.box a:hover {
+  color: var(--color-primary);
+}
+nav li:first-of-type {
+  border-left: none;
+}
+/* hero section */
+.hero {
+  width: 100%;
+  background: url(../images/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+/* background-size: cover;とするとスクリーンサイズが変わってもテキストがオーバーフローしない */
+.hero * {
+  text-shadow: 2px 2px 5px #ddd, -2px 2px 5px #ddd, 2px -2px 5px #ddd,
+    -2px -2px 5px #ddd;
+}
+.hero h2 {
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  padding: 4vw 5vw 0 0;
+  margin: 2vw 0 0 0;
+}
+.hero h1 {
+  font-family: "Ribeye", serif;
+  /* font-size: 3.5rem; */
+  font-size: clamp(2rem, 7vw, 5rem);
+  padding: 0 5vw 4vw 0;
+  line-height: 1.1;
+}
+.hero dt {
+  /* font-size: 7rem; */
+  font-size: clamp(5rem, 10vw, 7rem);
+  padding: 8vw 5vw 0 0;
+  font-family: "ta-houdate-m500", sans-serif;
+}
+.hero dd {
+  /* font-size: 1.6rem; */
+  font-size: clamp(1.3rem, 2.5vw, 3.3rem);
+  padding: 1vw 5vw 3.3vw 0;
+}
+h2 {
+  font-family: "Noto Serif JP", serif;
+  /* font-size: 2rem; */
+  font-size: clamp(1.8rem, 4vw, 4rem);
+  margin: 2vw 0 4vw 0;
+}
+h3 {
+  /* font-size: 1.3rem; */
+  font-size: clamp(1.3rem, 2vw, 3rem);
+}
+p {
+  /* font-size: 1.1rem; */
+  font-size: clamp(1rem, 1.3vw, 2rem);
+}
+.main-content p {
+  padding-bottom: 1.2vw;
+}
+/* main section */
+.main-content {
+  margin: 3.3vw 5vw;
+}
+.main-content h2,
+#bread h2,
+#access h2 {
+  color: var(--color-primary);
+}
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.7vw;
+}
+.item3 {
+  order: 4;
+}
+.item4 {
+  order: 3;
+}
+.foto img {
+  width: 42vw;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.foto img:hover {
+  box-shadow: 3px 3px 8px 3px #99a177;
+}
+.text {
+  width: 42vw;
+  display: flex;
+  flex-direction: column;
+}
+.text h3 {
+  padding: 1vw 0;
+}
+/* slide-wrapper section */
+#bread {
+  text-align: center;
+}
+.container {
+  width: 95%;
+  padding: 2vw;
+  margin-bottom: 3vw;
+  background: #f0e7c3;
+}
+/* 100%に設定するとswiper buttonがオーバーフローしてしまう */
+.card-wrapper {
+  display: flex;
+  justify-items: center;
+  column-gap: 2vw;
+  /* overflow-x: scroll; */
+}
+.card {
+  background-color: #fff;
+  color: #333;
+  width: 25%;
+  min-width: 25vw;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image-box {
+  width: 100%;
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.product-title {
+  font-weight: bold;
+  padding: 2vw 0 0.5vw 2vw;
+}
+.product-details {
+  padding: 0 0 2vw 2vw;
+}
+.swiper-btn {
+  color: #fff;
+  background: var(--color-primary);
+  width: 46px;
+  height: 46px;
+  /* border-radius: 50%; */
+}
+.swiper-pagination-bullet {
+  background-color: var(--color-primary);
+}
+/* operating hours & access */
+.flexbox-ops {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1vw;
+  margin-bottom: 5vw;
+}
+.ops img {
+  width: 30vw;
+  min-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+.iframe {
+  width: 20vw;
+  min-width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+.ops {
+  /* width: 30w; */
+  display: flex;
+  flex-direction: column;
+}
+.ops h3,
+.map h3 {
+  padding: 1vw 0;
+}
+.map dt {
+  font-weight: bold;
+  margin: 0.5vw 0;
+}
+.map dd {
+  margin-bottom: 1vw;
+}
+/* footer */
+footer {
+  background: var(--color-secondary);
+  height: auto;
+}
+footer li,
+footer a,
+footer small {
+  color: #fff;
+}
+.linkwrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+footer img,
+footer small {
+  margin: 3vw 0 0 5vw;
+}
+footer ul {
+  width: fit-content;
+  max-width: 70ch;
+  list-style-type: none;
+}
+/* 親要素に width: fit-content; を指定すると、インライン要素である子要素と同じ横幅に */
+footer a {
+  display: block;
+  text-decoration: none;
+}
+footer li:first-of-type {
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+footer a:hover {
+  color: var(--color-primary);
+}
+footer small {
+  display: block;
+  padding-bottom: 3vw;
+}
+/* リスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+  .foto img,
+  .ops img,
+  iframe {
+    width: 80vw;
+  }
+  .text {
+    width: 80vw;
+  }
+  .item3 {
+    order: 3;
+  }
+  .item4 {
+    order: 4;
+  }
+}
+/* Back to Top Button */
+/* 参考　https://cotodama.co/pagetop/ */
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: var(--color-primary);
+  opacity: 0.6;
+}
+#page_top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f102";
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+/* ハンバーガーメニュー設定 */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.308);
+  backdrop-filter: blur(1vw);
+  box-shadow: -1vw 0 1vw rgba(255, 255, 255, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li,
+.sidebar a {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 468px) {
+  .linkwrapper {
+    flex-direction: column;
+  }
+}
